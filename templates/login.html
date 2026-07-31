@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="login-page">
+    <main class="login-box">
+        <p class="eyebrow">Private assistant</p>
+        <h1>AI Chatbot</h1>
+        <p class="login-copy">Enter your email to keep your chat history separate on this device.</p>
+
+        <form method="POST" action="{{ url_for('login') }}">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+            <button type="submit">Continue</button>
+        </form>
+    </main>
+</body>
+</html>
